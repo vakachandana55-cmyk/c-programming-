@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+    int i = 20;
+ if (i == 10)
+      printf("not eligible");
+ else if (i == 15)
+      printf("wait for three years");
+  else if (i == 20)
+      printf("eligible for vote");
+else
+      printf("not a valid age");
+    return 0;
+}
+
+   
