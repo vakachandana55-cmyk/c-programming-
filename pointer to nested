@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+
+// Inner structure
+struct Address {
+    char city[20];
+    int pin;
+};
+
+// Outer structure
+struct Student {
+    int roll;
+    char name[20];
+    struct Address addr;  // Nested structure
+};
+
+int main() {
+    struct Student s1;
+
+
+    struct Student *ptr = &s1;
+
+
+    ptr->roll = 101;
+    strcpy(ptr->name, "Chandana");
+    strcpy(ptr->addr.city, "Hyderabad");
+    ptr->addr.pin = 500001;
+// Access and print values using pointer
+    printf("Roll No : %d\n", ptr->roll);
+    printf("Name    : %s\n", ptr->name);
+    printf("City    : %s\n", ptr->addr.city);
+    printf("PIN     : %d\n", ptr->addr.pin);
+
+    return 0;
+}
