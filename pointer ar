@@ -1,0 +1,6 @@
+int a[3] = {5, 10, 15};
+int *p = a;
+
+printf("%d\n", *p);
+printf("%d\n", *(p+1)); 
+printf("%d\n", *(p+2)); 
