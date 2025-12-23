@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void display() {
+    printf("Hello");
+}
+
+int main() {
+    void (*fp)() = display;
+    fp();
+    return 0;
+}
